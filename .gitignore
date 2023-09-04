@@ -1,0 +1,6 @@
+*.code-workspace
+data/
+*.obj
+.vscode/
+*.pyc
+output/
