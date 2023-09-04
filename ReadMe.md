@@ -13,12 +13,22 @@ https://developer.nvidia.com/blog/recreate-high-fidelity-digital-twins-with-neur
 conda activate digitaltweens
 ```
 
-## Installation Guide
-Install Cuda
+## Installation guide using conda
+Create a new conda environment 
+````
+conda create -n digitaltweens python=3.10
+`````
+Activate the conda environment 
+`````
+conda activate digitaltweens
+`````
+
+
+### Install Cuda 11.8
 ```
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 ```
-Install Pytroch 2.0
+### Install Pytroch 2.0
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
@@ -32,7 +42,7 @@ In the python environment run:
 >>> torch.cuda.is_available()
 true
 ```
-Install NKSR
+### Install NKSR
 
 Install nksr repository
 ```
